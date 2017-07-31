@@ -1,0 +1,129 @@
+
+.wrap-services-tabs {
+    .wrap-tabs {
+        text-align: center;
+        .nav  {
+            &.nav-tabs {
+                border: none;
+                text-align: center;
+                font-size: 0;
+                margin-bottom: 55px;
+                li {
+                    float: none;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 1em;
+                    border: none !important;
+                    &:last-child {
+                        a {
+                            border: none;
+                        }
+                    }
+                    a {
+                        padding-top: 20px;
+                        padding-bottom: 5px;
+                        text-align: center;
+                        border: none;
+                        background: none;
+                        border-right: 1px solid #f0f0f0;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        .icons {
+                            display: block;
+                            height: 42px;
+                            width: 100%;
+                            margin-bottom: 25px;
+                            &.icon-support {
+                                height: 41px;
+                                background: url(../img/icons/tabs/support.png) top center no-repeat;
+                            }
+                            &.icon-responsive {
+                                background: url(../img/icons/tabs/responsive.png) top center no-repeat;
+                            }
+                            &.icon-analytics {
+                                background: url(../img/icons/tabs/analytics.png) top center no-repeat;
+                            }
+                            &.icon-customizable {
+                                background: url(../img/icons/tabs/customizable.png) top center no-repeat;
+                            }
+                            &.icon-multipurpose {
+                                background: url(../img/icons/tabs/multipurpose.png) top center no-repeat;
+                            }
+                        }
+                        span {
+                            font-family: Karla, sans-serif;
+                            color: #555555;
+                            font-size: 13px; 
+                            font-weight: 400;
+                            text-transform: uppercase;
+                        }
+                    }
+                    &.active, &:hover {
+                        a {
+                            background: none;
+                            .icons {
+                                background-position: bottom center;
+                            }
+                            span {
+                                color: $orange;
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+.wrap-tabs-content {
+    background: #f6f6f6;
+    padding: 90px 0;
+    img {
+        max-width: 100%;
+    }
+    .tab-pane {
+        h5, p, ul {
+            margin-bottom: 30px;
+        }
+        .wrap-tabs-conten {
+            
+        }
+        .designations {
+            .last-year {
+                font-family: Karla, sans-serif;
+                color: #999999;
+                font-size: 13px; 
+                font-weight: 700;
+                text-align: left;
+                float: left;
+                margin-right: 30px;
+                text-transform: uppercase;
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px; 
+                    background-color: #237ac6;
+                    width: 15px;
+                    height: 10px;
+                }
+            }
+            .this-year {
+                font-family: Karla, sans-serif;
+                color: #999999;
+                font-size: 13px; 
+                font-weight: 700;
+                text-align: left;
+                float: left;
+                margin-right: 30px;
+                text-transform: uppercase;
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px; 
+                    background-color: #cccccc;
+                    width: 15px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}

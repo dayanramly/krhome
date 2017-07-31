@@ -1,0 +1,121 @@
+.plan-item {
+    text-align: center;
+    margin: 0 auto 30px;
+    max-width: 340px;
+    .item-heading {
+        height: 162px;
+        background: $blue;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        &.blue-heading {
+            position: relative;
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: $blue-dark;
+                opacity: 0.9;
+                z-index: 1;
+            }
+        }
+        &.orange-heading {
+            position: relative;
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: $orange;
+                opacity: 0.9;
+                z-index: 1;
+            }
+        }
+        &.price-1 {
+            background: url(../../img/sections/price-section-1.jpg) top center no-repeat;
+            background-size: cover;
+        }
+        &.price-2 {
+            background: url(../../img/sections/price-section-2.jpg) top center no-repeat;
+            background-size: cover;
+        }
+        &.price-3 {
+            background: url(../../img/sections/price-section-3.jpg) top center no-repeat;
+            background-size: cover;
+        }
+        h4 {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 5px;
+        }
+        span {
+            color: #ffffff;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .item-body {
+        border: 2px solid #eeeeee;
+        border-top: none;
+        padding: 0 50px 30px;
+        .price-count {
+            top: -55px;
+            margin: 0 auto -45px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            text-align: center;
+            line-height: 100px;
+            width: 110px;
+            height: 110px;
+            position: relative;
+            z-index: 3;
+            border: 5px solid #f6f6f6;
+            box-shadow: 0 0 0 2px #eeeeee inset;
+            span {
+                color: #333333;
+                font-size: 40px; 
+                font-weight: 700;
+                i {
+                    font-size: 30px; 
+                }
+            }
+        }
+        .price-type {
+            color: #555555;
+            position: relative;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            &:after {
+                content: "";
+                display: block;
+                background-color: $blue-dark;
+                width: 40px;
+                height: 1px;
+                margin: 10px auto;
+            }
+        }
+        ul {
+            margin-bottom: 20px;
+            li {
+                padding: 10px 0;
+                line-height: 30px;
+                border-bottom: 1px solid #eeeeee;
+                color: #555555;
+                font-size: 15px; 
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

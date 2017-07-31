@@ -1,0 +1,88 @@
+.alert {
+    padding: 5px 20px;
+    line-height: 30px;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    &.alert-default {
+        background: #eeeeee;
+        color: #333333;
+        span {
+            color: #333;
+        }
+    }
+    &.alert-warning {
+        background: #edb82a;
+    }
+    &.alert-danger {
+        background: #ed5c2a;
+    }
+    &.alert-success {
+        background: #4fcd24;
+    }
+    &.alert-info {
+        background: #237ac6;
+    }
+    &.alert-default-2 {
+        background: #7323c6;
+    }
+    span {
+        margin-right: 20px;
+        font-size: 16px;
+        color: #fff;
+    }
+    &.alert-dismissable {
+        position: relative;
+        padding: 30px 60px 30px 120px;
+        background: #fff;
+        border: 1px solid #eeeeee;
+        color: #333333;
+        .alert-icon {
+            position: absolute;
+            top: 50%;
+            height: 50px;
+            left: 50px;
+            margin-top: -25px;
+            line-height: 50px;
+            font-size: 30px;
+            min-width: 30px;
+            text-align: center;
+        }
+        .close {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            color: #ccc;
+            margin-top: -10px;
+            opacity: 1;
+        }
+        .title {
+            font-family: Lato, sans-serif;
+            color: #333333;
+            font-size: 16px; 
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &.alert-warning {
+            background: #ffecb7;
+            border: none;
+            .alert-icon, .close .fa {
+                color: #edb82a;
+            }
+        }
+        &.alert-danger {
+            background: #fcccd1; 
+            border: none;
+            .alert-icon, .close .fa {
+                color: #ed5c2a;
+            }
+        }
+        &.alert-success {
+            background: #c0f4af;
+            border: none;
+            .alert-icon, .close .fa {
+                color: #4fcd24;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.sidebar-widget {
+    margin-bottom: 40px;
+    .widget-heading {
+        font-family: Lato, sans-serif;
+        color:  #333333;
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        &:after {
+            content: "";
+            display: block;
+            width: 60px;
+            max-width: 100%;
+            border-bottom: 1px solid #ddd;
+            margin-top: 15px;
+            margin-bottom: 0.5em;
+        }
+    }
+    &.widget-categories {
+        .categories-list {
+            ul {
+                li {
+                    &.active, &:hover {
+                        a {
+                            color: $blue-dark;
+                            i {
+                                color: $orange;
+                            }
+                        }
+                    }
+                    a {
+                        color: #333333;
+                        font-size: 15px;
+                        line-height: 26px;
+                        text-align: left;
+                        display: block;
+                        padding: 12px 0; 
+                        border-bottom: 1px solid #eeeeee;
+                        i {
+                            color: $blue-dark;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.widget-recents-posts {
+        .posts-list {
+            .list-item {
+                padding: 20px 0;
+                margin: 0;
+                border-bottom: 1px solid #eeeeee;
+                img {
+                    width: 70px;
+                    max-height: 70px;
+                }
+                .media-left {
+                    padding-right: 20px;
+                }
+                .post-title {
+                    color: #333333;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    text-align: left;
+                    margin-bottom: 10px; 
+                    display: block;
+                }
+                .post-description {
+                    a {
+                        color: #237ac6;
+                        font-size: 12px; 
+                        margin-right: 10px;
+                        span {
+                            color: #ddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.widget-tags {
+        .btn {
+            margin-bottom: 5px;
+            text-transform: capitalize;
+        }
+    }
+} 

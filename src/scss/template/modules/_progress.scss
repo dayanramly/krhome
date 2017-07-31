@@ -1,0 +1,47 @@
+.progress {
+    border: 1px solid #eeeeee;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    &.bordered {
+        &.progress-primary {
+            border: 2px solid #237ac6;
+        }
+        &.progress-warning {
+            border: 2px solid $orange;
+        }
+    }
+    &.progress-primary {
+        .progress-bar {
+            background-color: #237ac6;
+        }
+    }
+    &.progress-warning {
+        .progress-bar { 
+            background-color: $orange;
+        }
+    }
+    &.progress-danger {
+        .progress-bar { 
+            background-color: #ed5c2a;
+        }
+    }
+    &.progress-custom {
+        .progress-bar { 
+            background-color: #7323c6;
+        }
+    }
+    &.progress-custom-2 {
+        .progress-bar { 
+            background-color: #c924ab;
+        }
+    }
+    &.progress-success {
+        .progress-bar { 
+            background-color: #4fcd24 ;
+        }
+    }
+    .progress-bar {
+        box-shadow: none;
+    }
+}

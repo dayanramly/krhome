@@ -1,0 +1,122 @@
+.wrap-team-slider {
+    padding: 0 15px;
+    background: #f6f6f6;
+    .person-description {
+
+    }
+    .wrap-user-images {
+        font-size: 0;
+        margin-right: -15px;
+    }
+    .team-slider {
+        /*width: auto;*/
+        padding-left: 15px;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+            height: 0;
+        }
+        .sp-slides-container {
+            padding-left: calc((100vw - 1200px) / 2);
+            width: 50%;
+            float: left;
+            padding-right: 15px;
+            .sp-mask {
+                width: 100% !important;
+                .sp-slides  {
+                    .sp-slide {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+        .sp-thumbnails-container {
+            width: 50% !important;
+            float: left; 
+            margin: 0;
+            .wrap-user-images {
+                @media (min-width: 768px) {
+                    width: 100% !important;
+                }
+                .sp-thumbnail-container {
+                    margin: 0;
+                    font-size: 14px;
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 33.3% !important;
+                    position: relative;
+                    height: auto !important;
+                    img {
+                        max-width: 100%;
+                        width: 100%;
+                        vertical-align: middle;
+                    }
+                    &:hover {
+                        .image-overlay {
+                            opacity: 1;
+                        }
+                    }
+                    .image-overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color:  rgba(0, 0, 0, 0.8);
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        transition: all 0.3s ease-out;
+                        opacity: 0;
+                        ul {
+                            li {
+                                display: inline-block;
+                                vertical-align: middle;
+                                color: #cccccc;
+                                margin: 0 5px;
+                                a {
+                                    color: #ccc;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .team-slide {
+            .person-description {
+                padding-top: 70px;
+                h5 {
+                    color: #237ac6;
+                    font-size: 18px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                }
+                .under-name {
+                    color: #ed912a;
+                    font-size: 14px; 
+                    font-style: italic;
+                    margin-bottom: 35px;
+                    text-transform: uppercase;
+                    &:after {
+                        content: "";
+                        margin-top: 25px;
+                        display: block;
+                        width: 40px;
+                        border-top: 1px solid $blue-dark;
+                    }
+                }
+            }
+        }
+    }
+}

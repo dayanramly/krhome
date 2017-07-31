@@ -1,0 +1,39 @@
+.social-list {
+    display: inline-block;
+    font-size: 0;
+    &.round-social-list {
+        li {
+            margin: 0 4px 8px;
+            a {
+                margin: 0;
+                border-radius: 50%;
+                border-color: #cdcdcd;
+                color: #999999;
+                &:hover {
+                    border-color: $blue;
+                    background: $blue;
+                }
+            }
+        }
+    }
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 15px;
+        a { 
+            display: block;
+            line-height: 48px;
+            width: 48px;
+            height: 48px;
+            border: 1px solid #cccccc;
+            margin-right: -1px;
+            margin-top: -1px;
+            color: #ccc;
+            &:hover {
+                background: $blue;
+                border-color: $blue;
+                color: #fff;
+            }
+        }
+    }
+}

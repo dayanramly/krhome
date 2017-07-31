@@ -1,0 +1,71 @@
+.pagination {
+    &.text-center {
+        text-align: center;
+        width: 100%;
+    }
+    ul {
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 5px 5px;
+            &.active {
+                span {
+                    color: #fff;
+                    line-height: 30px;
+                    text-align: center;
+                    width: 36px;           
+                    height: 36px;
+                    font-size: 14px; 
+                    display: inline-block;
+                    background: #eeeeee;
+                    border: 3px solid #eeeeee;
+                }
+            }
+            a {
+                line-height: 30px;
+                width: 36px;
+                height: 36px;
+                text-align: center;
+                color: #555555;
+                font-size: 14px; 
+                display: inline-block;
+                border: 3px solid #eeeeee;
+                text-decoration: none;
+            }
+        }
+    }
+    &.orange-pagination {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+                &.active {
+                    span {
+                        background: $orange;
+                        border: 3px solid $orange;
+                    }
+                }
+            }
+        }
+    }
+    &.blue-pagination {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        color: $blue-dark;
+                    }
+                }
+                &.active {
+                    span {
+                        background: $blue-dark;
+                        border: 3px solid $blue-dark;
+                    }
+                }
+            }
+        }
+    }
+}

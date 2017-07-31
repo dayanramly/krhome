@@ -1,0 +1,93 @@
+.footer {
+    background: url(../img/sections/footer-section.png) top center / cover no-repeat #191919;
+    padding: 20px 0 100px;
+    &.contact-footer {
+        padding: 100px 0 20px;
+    }
+    .footer-text {
+        margin-bottom: 60px;
+        color: #fefefe;
+    }
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+    .list-social {
+        margin-bottom: 20px;
+        ul {
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                a {
+                    font-size: 16px;
+                    color:  rgba(170, 170, 170, 0.8);
+                    padding: 0 10px;
+                    transition: all 0.3s ease-out;
+                    -webkit-transition: all 0.3s ease-out;
+                    -moz-transition: all 0.3s ease-out;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        font-family: Karla;
+        color: #7e848e;
+        font-size: 12px; 
+    }
+    .form-control {
+        border-color: #444444;
+    }
+}
+
+
+// Coming soon footer
+.coming-soon-footer {
+    padding: 60px 0;
+    border-top: 1px solid #eeeeee;
+    position: relative;
+    color: #7e848e;
+    text-transform: uppercase;
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+    .list-social {
+        margin-bottom: 20px;
+        ul {
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                a {
+                    font-size: 16px;
+                    color:  rgba(170, 170, 170, 0.8);
+                    padding: 0 10px;
+                    transition: all 0.3s ease-out;
+                    -webkit-transition: all 0.3s ease-out;
+                    -moz-transition: all 0.3s ease-out;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        font-family: Karla;
+        color: #7e848e;
+        font-size: 12px; 
+    }
+    &:before {
+        content: "";
+        background-color: #ffffff;
+        border: 1px solid #eeeeee;
+        width: 10px;
+        height: 11px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -5px;
+        margin-top: -5px;
+    }
+}

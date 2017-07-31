@@ -1,0 +1,39 @@
+.blog-comments {
+    margin-bottom: 40px;
+                
+    h4 {
+        margin-bottom: 40px; 
+    }
+    .comment-item {
+        background-color:  #f6f6f6;
+        padding: 25px;
+        margin-bottom: 30px;
+        .media-left {
+            padding-right: 25px;
+            img { 
+                max-width: 120px;
+            }
+        }
+        .comment-item-heading {
+            margin-bottom: 10px;
+            .author {
+                font-family: Lato, sans-serif;
+                color: #237ac6;
+                font-size: 14px; 
+                font-weight: 700;
+                line-height: 25px;
+            }
+            .date {
+                color: rgba(170, 170, 170, 0.8);
+                font-size: 14px;
+                font-style: italic;
+                text-transform: uppercase;
+            }
+        }
+        .comment-body {
+            p {
+                line-height: 24px;
+            }
+        }
+    }
+}

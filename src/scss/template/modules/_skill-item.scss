@@ -1,0 +1,36 @@
+.skill-item {
+    margin-bottom: 50px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .skill-label {
+        font-family: Lato, sans-serif;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        span {
+            margin-right: 15px;
+        }
+    }
+    .skill-line {
+        height: 3px;
+        width: 100%;
+        background: #519ad4;
+        position: relative;
+        span {
+            display: block;
+            height: 3px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background: #fff;
+        }
+    }
+    .skill-count {
+        color: #7cb0e4;
+        font-size: 22px; 
+        line-height: 10px;
+    }
+}

@@ -1,0 +1,136 @@
+/*------------------------------------------------------------------
+Project:	 RETTIC
+Version: 	1.0
+Assigned to:	Alximicus
+Primary use:	RETTIC
+-------------------------------------------------------------------*/
+
+/* RESET */
+@import "_reset.scss";
+
+/*************************/
+/***** BASE STYLES *******/
+/*************************/
+
+@import "_base.scss";
+
+/************************/
+/*        LAYOUT        */
+
+
+/******** HEADER *********/
+@import "layout/_header.scss"; 
+
+/******** FOOTER *********/
+@import "layout/_footer.scss";
+
+/******** SIDEBAR ********/
+@import "layout/_sidebar.scss";
+
+
+
+/*********  SECTIONS **********/
+
+@import "_sections.scss";
+
+
+/************************/
+/*        MODULES       */
+
+/******** LOADER ********/
+@import "modules/_loader.scss"; 
+
+/******** ALERTS ********/
+@import "modules/_alerts.scss"; 
+
+/******** PROGRESS ********/
+@import "modules/_progress.scss"; 
+
+/******** SERVICE TABS ********/
+@import "modules/_services-tabs.scss"; 
+
+/******** SERVICE ITEM ********/
+@import "modules/_service-item.scss"; 
+
+/******** COUNTERS ********/
+@import "modules/_counters.scss"; 
+
+/******** SOCIAL LIST ********/
+@import "modules/_social-list.scss"; 
+
+/******** PAGINATION ********/
+@import "modules/_pagination.scss"; 
+
+/******** NAV TABS ********/
+@import "modules/_tabs.scss"; 
+
+/******** Groups btns ********/
+@import "modules/_btn-group.scss"; 
+
+/******** Contact item ********/
+@import "modules/_contact-item.scss"; 
+
+/******** Blog item ********/
+@import "modules/_blog-item.scss"; 
+
+/******** Blog single item ********/
+@import "modules/_blog-single-post.scss"; 
+
+/******** Blog item footer********/
+@import "modules/_blog-footer.scss"; 
+
+/******** Comments ********/
+@import "modules/_comments.scss"; 
+
+/******** Gallery controls ********/
+@import "modules/_gallery-controls.scss";
+
+/******** Gallery item ********/
+@import "modules/_gallery-item.scss";
+
+/******** Feature item ********/
+@import "modules/_feature-item.scss";
+
+/******** Skill item ********/
+@import "modules/_skill-item.scss";
+
+/******** Accordion ********/
+@import "modules/_accordion.scss";
+
+/******** Team slider ********/
+@import "modules/_team-slider.scss";
+
+/******** Responsive-features-list ********/
+@import "modules/_responsive-features-list.scss";
+
+/******** Plan item ********/
+@import "modules/_plan-item.scss";
+
+/******** Portfolio item ********/
+@import "modules/_portfolio-item.scss";
+
+/******** Plan item ********/
+@import "modules/_contact-form.scss";
+
+
+
+// Theme styles
+@import "_theme.scss";
+
+
+/****** DEMO PAGE ******/
+@import "_demo.scss"; 
+
+/*MEDIA*/ 
+@import "_media.scss";
+
+
+
+
+
+
+
+
+
+
+

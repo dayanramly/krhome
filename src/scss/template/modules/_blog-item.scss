@@ -1,0 +1,102 @@
+.wrap-blog-post {
+    margin-bottom: 40px;
+    &.wrap-wide-blog-post {
+        background: #f6f6f6;
+        .wrap-image {
+            .post-date {
+                right: auto;
+                left: 40px;
+            }
+        }
+    }
+    .wrap-image {
+        position: relative;
+        min-height: 50px;
+        img {
+            min-width: 100%;
+        }
+        .post-date {
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 700;
+            background: $blue-dark;
+            display: inline-block;
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            padding: 19px 20px; 
+        }
+    }
+    .post-description {
+        background: #f6f6f6;
+        padding: 45px 40px 0 40px;
+        line-height: 25px;
+        .author {
+            color: #aaaaaa;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-right: 10px;
+            a {
+                color: $blue-dark;
+            }
+        }
+        a {
+            color: $blue-dark;
+            span {
+                color:  rgba(170, 170, 170, 0.8);
+            }
+        }
+    }
+    .post-body {
+        background: #f6f6f6;
+        padding: 0 40px 45px 40px;
+        p {
+            margin: 15px 0 25px;
+        }
+    }
+}
+
+.list-blog-item {
+    max-width: 290px;
+    margin: 0 auto 20px;
+    .blog-image {
+        margin-bottom: 35px;
+        img {
+            max-width: 100%;
+        }
+    }
+    .tags {
+        margin-bottom: 10px;
+        span {
+            color: #ed912a;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+    .blog-description {
+        p {
+            font-family: Lato, sans-serif;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 25px;
+            &:after {
+                content: "";
+                display: block;
+                background-color: rgba(255, 255, 255, 0.5);
+                width: 40px;
+                height: 1px;
+                margin-top: 25px;
+            }
+        }
+        .read-more {
+            color: #fff;
+            opacity: 0.8;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

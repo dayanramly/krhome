@@ -1,0 +1,24 @@
+.btn-group {
+    .btn {
+        &.btn-transparent {
+            color: #ffffff;
+            font-size: 12px; 
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 0;
+            line-height: 35px;
+            padding: 0 15px;
+            .fa {
+                padding: 0;
+            }
+            &:hover {
+                background: $orange;
+                color: #fff;
+                border-color: $orange;
+            }
+        }
+    }
+    &.social-btn-group {
+        
+    }
+}

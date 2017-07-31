@@ -1,0 +1,83 @@
+@import "layout/_variables.scss";
+body { 
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    color: #333333;
+    overflow-x: hidden;
+}
+* {
+    outline: none !important;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.img-responsive {
+    display: inline-block;
+    vertical-align: middle;
+}
+.vtop {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+}
+.vertical-middle { 
+    vertical-align: middle;
+}
+.vertical-bottom {
+    vertical-align: bottom;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.row.row-margin {
+    margin-bottom: 40px;
+}
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row.no-gutter [class*='col-']:not(:first-child), 
+.row.no-gutter [class*='col-']:not(:last-child) {
+    padding-left: 0;
+    padding-right: 0;
+}
+.relative {
+    position: relative;
+}
+.text-white {
+    color: #fff;
+}
+.no-border {
+    border: none !important; 
+}
+.font-bold {
+    font-weight: bold;
+    &.btn {
+        font-weight: bold;
+    }
+}
+.invertX {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+// Google maps
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+// THEME STYLES   
+
+@import "_theme.scss";

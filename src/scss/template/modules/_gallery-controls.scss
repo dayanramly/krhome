@@ -1,0 +1,31 @@
+.gallery-controls {
+    text-align: center;
+    margin-bottom: 40px;
+    .btn-group {
+        a {
+            color: #555555;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+            i {
+                opacity: 0;
+                display: block;
+                -webkit-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+                -webkit-transform: translate(0, -10px);
+                transform: translate(0, -10px);
+                padding: 0;
+                margin: auto;
+                font-size: 22px;
+            }
+            &:hover, &.active {
+                color: $orange;
+                i {
+                color: $orange;
+                    opacity: 1;
+                    -webkit-transform: translate(0, 0);
+                    transform: translate(0, 0);
+                }
+            }
+        }
+    }
+}
