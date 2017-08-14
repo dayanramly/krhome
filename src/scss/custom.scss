@@ -67,13 +67,28 @@ strong{
 	width: 212px;
 	font-size: 14px;
 	background: transparent;
-	color: #75a1c1;
-	border: 2px solid #75a1c1;
+	color: #aeddff;
+	border: 2px solid #98d3ff;
 	outline: none;
 	&:hover, &:active, &:focus{
 		// background: darken(#75a1c1, 5%) !important;
-		color: darken(#75a1c1, 10%) !important;
-		border-color: darken(#75a1c1, 10%) !important;
+		color: darken(#aeddff, 10%) !important;
+		border-color: darken(#98d3ff, 10%) !important;
+	}
+}
+.btn-black-outline{
+	padding: 8px 0px;
+	min-width: 180px;
+	font-size: 13px;
+	background: transparent;
+	color: #2979bd;
+	border: 2px solid #2979bd;
+	outline: none;
+	margin-top: 20px;
+	&:hover, &:active, &:focus{
+		// background: darken(#75a1c1, 5%) !important;
+		color: darken(#2979bd, 10%) !important;
+		border-color: darken(#2979bd, 10%) !important;
 	}
 }
 .mbt-30{
@@ -223,15 +238,15 @@ strong{
 	background: #337ab7;
 	.col-md-12{
 		h2{
-			font-family: 'Titillium Web', sans-serif;
+			font-family: 'Lato', sans-serif;
 			font-weight: 400;
 			font-size: 2em;
 			color: #ffffff;
 			letter-spacing: 1.3px;
 		}
 		p{
-			font-size: 1.1em;
-			font-family: 'Titillium Web', sans-serif;
+			font-size: 1.17em;
+			font-family: 'Lato', sans-serif;
 			font-weight: 300;
 			color: #ffffff;
 		}
@@ -240,12 +255,13 @@ strong{
 .krhome-gallery{
 	background-color: #f4f4f4;
 	h2{
-		font-family: 'Titillium Web', sans-serif;
+		font-family: 'Lato', sans-serif;
 		font-weight: 400;
 		font-size: 2em;
-		color: #4a4c4c;
+		color: #3d3f41;
 		line-height: 1.5;
-		letter-spacing: 1.3px;
+		letter-spacing: 1.7px;
+		margin-bottom: 60px;
 	}
 	h3{
 		margin-bottom: 60px;
@@ -258,6 +274,77 @@ strong{
 		-webkit-margin-after: 1em;
 		-webkit-margin-start: 0px;
 		-webkit-margin-end: 0px;
+	}
+	.gal-item-slider{
+		.description{
+			padding: 0px 40px;
+			h4{
+				margin-bottom: 30px;
+				font-size: 22px;
+				font-weight: 400;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				font-kerning: normal;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+			}
+			p{
+				font-family: 'Lato', sans-serif;
+				font-size: 15px;
+				font-weight: 300;
+				color: #777;
+				line-height: 1.7;
+			}
+		}
+		.image-slider{
+			position: relative;
+			// padding: 0;
+			img{
+				height: 240px;
+				object-fit: cover;
+				object-position: 50% 50%;
+			}
+			.slider-cover{
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				z-index: 1;
+				background-color: rgba(49,105,155,.3);
+			}
+		}
+	}
+	.owl-nav{
+		.owl-prev{
+			position: absolute;
+			top: 30%;
+			left: -3%;
+			i{
+				color: #b1b1b1;
+				font-size: 2.2em;
+			}
+			&:hover{
+				i{
+					color: darken(#b1b1b1, 10%);
+				}
+			}
+		}
+		.owl-next{
+			position: absolute;
+			top: 30%;
+			right: -3%;
+			i{
+				color: #b1b1b1;
+				font-size: 2.2em;
+			}
+			&:hover{
+				i{
+					color: darken(#b1b1b1, 10%);
+				}
+			}
+		}
 	}
 	.gallery-items{
 		.gallery-item{
@@ -283,18 +370,30 @@ strong{
 }
 .krhome-inquiry{
 	text-align: center;
+	background: url('../img/bgr/bgr6.jpeg');
+	background-position: 50% 50%;
+	background-size: cover;
+	position: relative;
+	.bgr-cover{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(21,87,144,.85);
+	}
 	h2{
-		font-family: 'Titillium Web', sans-serif;
+		font-family: 'Lato', sans-serif;
 		font-weight: 400;
 		font-size: 2em;
-		color: #4a4c4c;
+		color: #ffffff;
 		line-height: 1.5;
 		letter-spacing: 1.3px;
 	}
 	h3{
 		margin-bottom: 60px;
 		font-weight: 300;
-		color: #3d3f41;
+		color: #ffffff;
 		font-family: 'Lato', sans-serif;
 		font-kerning: normal;
 		font-size: 1.17em;
@@ -304,7 +403,7 @@ strong{
 		p{
 			margin-bottom: 0;
 			font-weight: 300;
-			color: #3d3f41;
+			color: #ffffff;
 			font-family: 'Lato', sans-serif;
 			font-kerning: normal;
 			font-size: 1.17em;
@@ -313,6 +412,7 @@ strong{
 			font-family: 'Lato', sans-serif;
 			font-kerning: normal;
 			font-size: 1.3em;
+			color: #ffffff;
 		}
 	}
 }
@@ -325,7 +425,7 @@ strong{
 	text-align: left;
 	label.control-label{
 		font-family: Karla,sans-serif;
-		color: #7d7d7d;
+		color: #ffffff;
 		font-size: 15px;
 		font-weight: 400
 	}
