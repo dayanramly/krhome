@@ -482,7 +482,7 @@ textarea {
     box-shadow: none !important; 
     outline: none;
     border: none;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #798ea2;
     border-radius: 0;
     border-radius: none;
     padding-left: 0; 
@@ -493,10 +493,10 @@ textarea {
     font-size: 15px; 
     font-weight: 400;
     &:focus, &:active {
-        border-color: #dddddd;
+        border-color: #798ea2;
     }
     &.bordered {
-        border: 1px solid #ddd;
+        border: 1px solid #798ea2;
         border-radius: 2px;
         color:  #777777;
         font-style: italic;
